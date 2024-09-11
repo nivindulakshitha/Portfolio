@@ -5,6 +5,7 @@ import CanvasLoader from "../components/CanvasLoader"
 import HackerRoom from "../components/HackerRoom"
 import { useMediaQuery } from "react-responsive"
 import { calculateSizes } from "../constants"
+import Target from "../components/Target"
 
 const HeroSection = () => {
 	const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -31,6 +32,9 @@ const HeroSection = () => {
 								rotation={[0, -Math.PI, 0]}
 								scale={sizes.deskScale}
 							/>
+							<group>
+								<Target position={sizes.targetPosition} />
+							</group>
 							<ambientLight intensity={1} />
 							<directionalLight position={[10, 10, 10]} intensity={0.5} />
 						</Suspense>
