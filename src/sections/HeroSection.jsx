@@ -18,7 +18,9 @@ const HeroSection = () => {
 
 						<Suspense fallback={<CanvasLoader />}>
 							<PerspectiveCamera makedefault position={[0, 0, 30]} />
-							<HackerRoom />
+							<HackerRoom scale={0.03} position={[0, 0, -3]} rotation={[0, 280, 0]} />
+							<ambientLight intensity={1} />
+							<directionalLight position={[10, 10, 10]} intensity={0.5} />
 						</Suspense>
 					</Canvas>
 				</div>
