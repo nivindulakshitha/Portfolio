@@ -26,7 +26,7 @@ export default function HackerRoom(props) {
             </mesh>
             <mesh geometry={nodes.table_table_mat_0_9.geometry} material={materials.cables_mat} />
             <mesh geometry={nodes.table_table_mat_0_10.geometry} material={materials.props_mat} />
-            <mesh geometry={nodes.table_table_mat_0_11.geometry} material={materials.ground_mat} />
+            {/* <mesh geometry={nodes.table_table_mat_0_11.geometry} material={materials.ground_mat} /> */}
             <mesh geometry={nodes.table_table_mat_0_12.geometry} material={materials.key_mat} />
         </group>
     );
