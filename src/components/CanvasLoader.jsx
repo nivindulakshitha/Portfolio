@@ -11,9 +11,9 @@ const CanvasLoader = () => {
             flexDirection: 'column'
         }}>
             <span className="canvas-loader" />
-            <p style={{ fontSize: 14, color: '#F1F1F1', fontWeight: 800, marginTop: 40 }}>
+            <p style={{ fontSize: 14, color: '#F1F1F1', fontWeight: 700, marginTop: 40, opacity: 0.5, whiteSpace: 'nowrap' }}>
                 {
-                    progress !== 0 ? `Loading ${progress.toFixed(2)}%` : 'Loading...'
+                    progress !== 0 ? `Loading... ${progress.toFixed(0)}%` : 'Loading...'
                 }
             </p>
 
