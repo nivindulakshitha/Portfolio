@@ -26,7 +26,6 @@
 4. 🤸 [Quick Start](#quick-start)
 5. 🕸️ [Snippets (Code to Copy)](#snippets)
 6. 🔗 [Links](#links)
-7. 📦 [Assets](#assets)
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -857,8 +856,3 @@ Here is the list of all the resources used in the project video:
 - [ReadyPlayerMe](https://readyplayer.me/)
 - [Mixamo](https://www.mixamo.com/)
 - [FBX Animations ZIP](https://drive.google.com/file/d/1yQhrRvEQFEwxbjG2qelv_T-gAatXJ3N1/view?usp=sharing)
-
-
-## <a name="assets">🔗 Assets</a>
-
-Models and Assets used in the project can be found [here](https://drive.google.com/file/d/1UiJyotDmF2_tBC-GeLpRZuFY_gx5e7iX/view?usp=sharing)
