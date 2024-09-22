@@ -855,4 +855,3 @@ Here is the list of all the resources used in the project video:
 - [gltfjsx](https://gltf.pmnd.rs/)
 - [ReadyPlayerMe](https://readyplayer.me/)
 - [Mixamo](https://www.mixamo.com/)
-- [FBX Animations ZIP](https://drive.google.com/file/d/1yQhrRvEQFEwxbjG2qelv_T-gAatXJ3N1/view?usp=sharing)
