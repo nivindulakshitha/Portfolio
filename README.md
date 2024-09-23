@@ -12,7 +12,7 @@
   </div>
 
   <h3 align="center">A 3D Dev Portfolio</h3>
-
+</div>
 
 ## 📋 <a name="table">Table of Contents</a>
 
