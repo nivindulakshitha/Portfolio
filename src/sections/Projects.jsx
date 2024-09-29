@@ -2,7 +2,7 @@ import { Suspense, useState } from 'react';
 import { myProjects } from '../constants'
 import { Canvas } from '@react-three/fiber';
 import { Center } from '@react-three/drei';
-import { CanvasLoader } from '../components/CanvasLoader';
+import CanvasLoader from '../components/CanvasLoader';
 import DemoComputer from '../components/DemoComputer';
 
 const Projects = () => {
@@ -23,7 +23,7 @@ const Projects = () => {
     }
 
     return (
-        <section clasName="c-space my-20">
+        <section className="c-space my-20">
             <p className="head-text">My Work</p>
             <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full'>
                 <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
