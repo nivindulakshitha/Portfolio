@@ -2,7 +2,8 @@ import { useGLTF, VideoTexture } from '@react-three/drei'
 
 const DemoComputer = (props) => {
     const { nodes, materials } = useGLTF('/models/computer.glb')
-    const text = VideoTexture("/textures/project/project1.mp4")
+    //onst text = VideoTexture("/textures/project/project1.mp4")
+    const monitortxt = VideoTexture('/textures/project/project1.mp4');
 
     return (
         <group {...props} dispose={null}>
@@ -37,7 +38,7 @@ const DemoComputer = (props) => {
                         receiveShadow
                         geometry={nodes.defaultMaterial_4.geometry}
                     >
-                        <meshBasicMaterial map={text} />
+                        <meshBasicMaterial map={monitortxt} />
                     </mesh>
                     <mesh
                         castShadow
