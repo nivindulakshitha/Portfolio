@@ -1,6 +1,6 @@
 import { useGLTF } from '@react-three/drei'
 
-export function DemoComputer(props) {
+const DemoComputer = (props) => {
     const { nodes, materials } = useGLTF('/models/computer.glb')
     return (
         <group {...props} dispose={null}>
@@ -49,3 +49,4 @@ export function DemoComputer(props) {
 }
 
 useGLTF.preload('/models/computer.glb')
+export default DemoComputer;
