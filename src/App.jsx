@@ -3,7 +3,7 @@ import HeroSection from "./sections/HeroSection"
 import NavBar from "./sections/NavBar"
 import Projects from "./sections/Projects"
 import Clients from "./sections/Clients"
-import Contact from "./components/Contact"
+import Contact from "./sections/Contact"
 
 const App = () => {
 	return (
