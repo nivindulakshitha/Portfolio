@@ -15,11 +15,11 @@ const Contact = () => {
      }
 
     const handleSubmit = async(e) => {
-        e.preventDeafult();
+        e.preventDefault();
         setLoading(true);
 
         try {
-            await emailjs.send("service_3bncnz9", "template_kdhvr4m",
+            await emailjs.send("service_3bncnz9", "template_riosk7t",
                 {
                     from_name: form.name,
                     to_name: "Nivindu Lakshitha",
