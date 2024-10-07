@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const formRef = useRef();
@@ -13,15 +14,35 @@ const Contact = () => {
         setForm({...form, [name]: value })
      }
 
-    
-    // service_3bncnz9
-    const handleSubmit = () => {
+    const handleSubmit = async(e) => {
+        e.preventDeafult();
+        setLoading(true);
 
-        setForm({
-            name: '',
-            email: '',
-            message: '',
-        })
+        try {
+            await emailjs.send("service_3bncnz9", "template_kdhvr4m",
+                {
+                    from_name: form.name,
+                    to_name: "Nivindu Lakshitha",
+                    from_email: form.email,
+                    to_email: "nivindulakshitha@gmail.com",
+                    message: form.message
+                },
+                "O21cL1VZ5v6FSk0lO"
+            )
+
+            setForm({
+                name: '',
+                email: '',
+                message: '',
+            })
+
+            alert("Your message was sent to Nivindu Lakshitha, Thank you!")
+        } catch (error) {
+            console.log(error);
+            alert("Something went wrong, please try again!")
+        } finally { 
+            setLoading(false);
+        }        
      }
 
     return (
@@ -37,7 +58,7 @@ const Contact = () => {
                         I am always open to discussing new projects, creative ideas or new opportunities to be part of. Feel free to connect with me. 
                     </p>
 
-                    <form ref={formRef} onSubmit={() => { handleSubmit();  setLoading(true)}} className="mt-12 flex flex-col space-y-7">
+                    <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
                         <label htmlFor="name" className="space-y-3">
                             <span className="field-label">Full Name</span>
                             <input type="text" name="name" onChange={handleInput} value={form.name} className="field-input" placeholder="Nivindu Lakshitha" required />
